@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!-- // atSymbol Page was here (if anything breaks) -->
+<div class="main-body">
+    <div class="usersContainer">
+        <h5 class="heading users-heading">Online Users</h5>
+        <div class="inner-white-box users-box">
+            <ul id="online-users"></ul>
+        </div>
+    </div>
+
+    <div class="publicContainer">
+        <h5 class="heading">Public Chat</h5>
+        <div class="inner-white-box public-box">
+            <div class="body-logo">
+                <ul id="messagesList">
+                    <span id="anchor"></span>
+                </ul>
+            </div>
+        </div>
+        <form id="chat-form" class="message-input">
+            <input type="hidden" id="userInput" value="@User.Identity.Name" />
+            <input type="text" class="w-100" id="messageInput" placeholder="Type Message..." />
+            <input type="submit" id="sendButton" value="Send" />
+        </form>
+    </div>
+    <div class="privateContainer">
+        <h5 class="heading private-heading">Private Chats</h5>
+        <div id="private-chat-container" class="inner-white-box private-box">
+            <!-- class="private-chat-box" for the private chats that are made-->
+        </div>
+    </div>
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+@* The Following script is what will update our main chat page: *@
+<script src="~/js/chat.js"></script>
+@* <script src="~/js/pvtchat.js"></script> *@
