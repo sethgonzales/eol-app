@@ -56,14 +56,14 @@
   {
     <div class="container col-4">
       <div class="card error-card">
-        <div class="card-header">
+        @* <div class="card-header"> *@
           <div class="error-banner">
             Log In Error
             <span class="close-error" style="float: right;">
               @Html.ActionLink("X", "Login")
             </span>
           </div>
-        </div>
+        @* </div> *@
         <div class="card-body">
           @Html.ValidationSummary("Please fix the following error(s) and then resubmit the form:", new
             {
