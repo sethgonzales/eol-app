@@ -5,8 +5,6 @@ namespace Eol.Models
 {
   public class EolContext : IdentityDbContext<ApplicationUser>
   { 
-    public DbSet<Message> Messages { get; set; }
-    
     public EolContext(DbContextOptions options) : base(options) { }
   }
 
