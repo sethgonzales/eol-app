@@ -45,8 +45,8 @@
                 @class = "form-control account-input"
               }
             })
+          <input type="submit" value="Register" class="btn-register" />
           <div class="register-links">
-            <input type="submit" value="Register" class="btn-register" />
             @Html.ActionLink("Back", "Index")
             @Html.ActionLink("Log In", "Login")
             <br />
@@ -63,12 +63,12 @@
     <div class="container col-4">
       <div class="card error-card">
         @* <div class="card-header"> *@
-          <div class="error-banner">
-            Registration Error
-            <span class="close-error" style="float: right;">
-              @Html.ActionLink("X", "Register")
-            </span>
-          </div>
+        <div class="error-banner">
+          Registration Error
+          <span class="close-error" style="float: right;">
+            @Html.ActionLink("X", "Register")
+          </span>
+        </div>
         @* </div> *@
         <div class="card-body">
           @Html.ValidationSummary("Please fix the following error(s) and then resubmit the form:", new
