@@ -454,6 +454,10 @@ a {
   padding-bottom: 3px;
 }
 
+.error-banner {
+  border-radius: 7px 7px 0px 0px;
+
+}
 
 .login-links,
 .register-links {
